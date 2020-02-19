@@ -1,0 +1,7 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/home/javier/Desktop/PracticasDigital/3_BlinkLed/3_BlinkLed.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+/home/javier/Desktop/PracticasDigital/3_BlinkLed/3_BlinkLed.srcs/sim_1/new/testbench.v,1575772701,verilog,,,,testbench,,,,,,,,
+/home/javier/Desktop/PracticasDigital/3_BlinkLed/3_BlinkLed.srcs/sources_1/new/clock_divider.v,1575772240,verilog,,/home/javier/Desktop/PracticasDigital/3_BlinkLed/3_BlinkLed.srcs/sim_1/new/testbench.v,,clock_divider,,,,,,,,
