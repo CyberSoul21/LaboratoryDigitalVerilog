@@ -7,9 +7,9 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/usr/local/Xilinx/Vitis/2019.2/bin:/usr/local/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/lin64:/usr/local/Xilinx/Vivado/2019.2/bin
+  PATH=/tools/Xilinx/Vitis/2019.2/bin:/tools/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/lin64:/tools/Xilinx/Vivado/2019.2/bin
 else
-  PATH=/usr/local/Xilinx/Vitis/2019.2/bin:/usr/local/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/lin64:/usr/local/Xilinx/Vivado/2019.2/bin:$PATH
+  PATH=/tools/Xilinx/Vitis/2019.2/bin:/tools/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/lin64:/tools/Xilinx/Vivado/2019.2/bin:$PATH
 fi
 export PATH
 
@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/javier/Desktop/PracticasDigital/3_BlinkLed/3_BlinkLed.runs/synth_1'
+HD_PWD='/home/javier/Documents/laboratorydigitalverilog/3_BlinkLed/3_BlinkLed.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

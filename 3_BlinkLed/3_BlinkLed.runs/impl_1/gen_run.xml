@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1575839232">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1583770115">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="blink.drc"/>
+  <File Type="BG-BGN" Name="blink.bgn"/>
   <File Type="BITSTR-SYSDEF" Name="blink.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="blink.ltx"/>
-  <File Type="BG-BGN" Name="blink.bgn"/>
   <File Type="RBD_FILE" Name="blink.rbd"/>
-  <File Type="BG-DRC" Name="blink.drc"/>
   <File Type="NPI_FILE" Name="blink.npi"/>
   <File Type="RNPI_FILE" Name="blink.rnpi"/>
   <File Type="CFI_FILE" Name="blink.cfi"/>
+  <File Type="RDI-RDI" Name="blink.vdi"/>
+  <File Type="RCFI_FILE" Name="blink.rcfi"/>
   <File Type="PDI-FILE" Name="blink.pdi"/>
   <File Type="BITSTR-MMI" Name="blink.mmi"/>
   <File Type="BITSTR-BMM" Name="blink_bd.bmm"/>
@@ -17,17 +19,17 @@
   <File Type="BITSTR-RBT" Name="blink.rbt"/>
   <File Type="BITSTR-MSK" Name="blink.msk"/>
   <File Type="BG-BIN" Name="blink.bin"/>
-  <File Type="RCFI_FILE" Name="blink.rcfi"/>
   <File Type="BG-BIT" Name="blink.bit"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="blink_bus_skew_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="blink_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="blink_bus_skew_postroute_physopted.rpt"/>
-  <File Type="RDI-RDI" Name="blink.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="blink_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="blink_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="blink_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="blink_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="blink_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="blink_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="blink_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW" Name="blink_bus_skew_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="blink_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-SIMILARITY" Name="blink_incremental_reuse_routed.rpt"/>
@@ -62,18 +64,16 @@
   <File Type="PLACE-CLK" Name="blink_clock_utilization_placed.rpt"/>
   <File Type="PLACE-IO" Name="blink_io_placed.rpt"/>
   <File Type="PLACE-DCP" Name="blink_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="blink_timing_summary_pwropted.rpt"/>
   <File Type="PWROPT-DRC" Name="blink_drc_pwropted.rpt"/>
   <File Type="PWROPT-DCP" Name="blink_pwropt.dcp"/>
-  <File Type="OPT-TIMING" Name="blink_timing_summary_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="blink.hwdef"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="blink_methodology_drc_opted.rpt"/>
   <File Type="OPT-DRC" Name="blink_drc_opted.rpt"/>
   <File Type="OPT-DCP" Name="blink_opt.dcp"/>
   <File Type="INIT-TIMING" Name="blink_timing_summary_init.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="blink_bus_skew_routed.rpx"/>
+  <File Type="PWROPT-TIMING" Name="blink_timing_summary_pwropted.rpt"/>
   <File Type="REPORTS-TCL" Name="blink_reports.tcl"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="blink_bus_skew_routed.pb"/>
+  <File Type="OPT-TIMING" Name="blink_timing_summary_opted.rpt"/>
   <File Type="PA-TCL" Name="blink.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -116,9 +116,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
